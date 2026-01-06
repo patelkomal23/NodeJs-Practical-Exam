@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Register</title>
+
+  <link href="/dist/css/style.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <div class="auth-wrapper d-flex no-block justify-content-center align-items-center bg-dark">
+      <div class="auth-box bg-dark border-top border-secondary">
+
+        <div class="text-center p-t-20 p-b-20">
+          <span class="db">
+            <img src="/assets/images/logo.png" alt="logo" />
+          </span>
+        </div>
+
+        <!-- ✅ FORM -->
+        <form class="form-horizontal m-t-20" action="/register" method="POST">
+          <div class="row p-b-30">
+            <div class="col-12">
+
+              <!-- Username -->
+              <div class="input-group mb-3">
+                <span class="input-group-text bg-success text-white">
+                  <i class="ti-user"></i>
+                </span>
+                <input
+                  type="text"
+                  name="username"
+                  class="form-control form-control-lg"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="input-group mb-3">
+                <span class="input-group-text bg-danger text-white">
+                  <i class="ti-email"></i>
+                </span>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control form-control-lg"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+
+              <!-- Password -->
+              <div class="input-group mb-3">
+                <span class="input-group-text bg-warning text-white">
+                  <i class="ti-pencil"></i>
+                </span>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control form-control-lg"
+                  placeholder="Password"
+                  required
+                />
+              </div>
+
+              <!-- ❌ ROLE FIELD REMOVED (Security) -->
+
+            </div>
+          </div>
+
+          <div class="row border-top border-secondary">
+            <div class="col-12 p-t-20">
+              <button class="btn btn-block btn-lg btn-info" type="submit">
+                Sign Up
+              </button>
+
+              <div class="text-center mt-3">
+                <p class="fs-3 text-white">
+                  ------------------ or -----------------
+                </p>
+              </div>
+
+              <a href="/login" class="btn btn-block btn-lg btn-success">
+                Login
+              </a>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script>
+    $(".preloader").fadeOut();
+  </script>
+</body>
+</html>
