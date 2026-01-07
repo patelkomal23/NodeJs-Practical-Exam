@@ -42,7 +42,7 @@ app.use("/", router);
 const PORT = process.env.PORT || 8018;
 app.listen(PORT, () => {
   console.log("=================================");
-  console.log("Server started successfully 🚀");
+  console.log("Server started successfully");
   console.log(`http://localhost:${PORT}`);
   console.log("=================================");
 });
